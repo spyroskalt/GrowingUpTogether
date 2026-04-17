@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Τι γνωρίζεις για τη γήρανση στη νοητική αναπηρία;</title>
+<meta name="description" content="10 σενάρια από την καθημερινή πραγματικότητα. Πόσο έτοιμοι είμαστε να υποστηρίξουμε άτομα με νοητική αναπηρία που μεγαλώνουν;"/>
+<meta property="og:title" content="Τι γνωρίζεις για τη γήρανση στη νοητική αναπηρία;"/>
+<meta property="og:description" content="10 σενάρια πραγματικής ζωής. Πόσο έτοιμοι είμαστε να ανταποκριθούμε; Πρόγραμμα «Μεγαλώνοντας Μαζί»."/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --accent: #1A1A1A;
+  --accent-light: #F2F2F2;
+  --accent-mid: #555555;
+  --green: #2A2A2A;
+  --green-light: #F2F2F2;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-muted: #888888;
+  --bg: #FFFFFF;
+  --card: #FFFFFF;
+  --border: #E0E0E0;
+  --success: #1A5C16;
+  --success-bg: #EDF5EC;
+  --success-border: #6AAF66;
+  --error: #8C2020;
+  --error-bg: #F9ECEC;
+  --error-border: #C97070;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.site-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid var(--border);
+  padding: 2.5rem 1.5rem 2rem;
+  text-align: center;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  font-family: 'Noto Serif', serif;
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
+}
+
+.site-subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.progress-section { margin-bottom: 1.5rem; }
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.progress-label { font-size: 13px; color: var(--text-muted); }
+.progress-count { font-size: 13px; font-weight: 500; color: var(--text-secondary); }
+
+.progress-bar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.progress-fill {
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.scenario-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.person-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 600;
+  flex-shrink: 0;
+  font-family: 'Noto Serif', serif;
+}
+
+.person-info { flex: 1; min-width: 120px; }
+
+.person-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.person-role { font-size: 12px; color: var(--text-muted); }
+
+.theme-badge {
+  font-size: 11px;
+  color: var(--green);
+  background: var(--green-light);
+  padding: 3px 11px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.narrative {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.narrative p {
+  font-family: 'Noto Serif', serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--text-primary);
+}
+
+.question-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.question-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+
+.question-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 11px 15px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  text-align: left;
+  background: transparent;
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.opt:hover:not(:disabled) {
+  border-color: var(--accent-mid);
+  background: var(--accent-light);
+}
+
+.opt-letter {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+  margin-top: 1px;
+}
+
+.opt-text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-primary);
+}
+
+.opt.correct {
+  border-color: var(--success-border);
+  background: var(--success-bg);
+}
+
+.opt.correct .opt-letter {
+  background: var(--success);
+  border-color: var(--success);
+  color: white;
+}
+
+.opt.correct .opt-text {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.opt.wrong {
+  border-color: var(--error-border);
+  background: var(--error-bg);
+}
+
+.opt.wrong .opt-letter {
+  background: var(--error);
+  border-color: var(--error);
+  color: white;
+}
+
+.opt.wrong .opt-text { color: var(--error); }
+
+.opt:disabled { cursor: default; }
+
+.feedback {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  display: none;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+}
+
+.next-btn {
+  padding: 10px 22px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+  display: none;
+  transition: opacity 0.15s;
+}
+
+.next-btn:hover { opacity: 0.88; }
+
+.score-screen {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: none;
+}
+
+.score-ring {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  border: 2px solid var(--accent-mid);
+  margin-bottom: 1.25rem;
+}
+
+.score-number {
+  font-family: 'Noto Serif', serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.score-denom {
+  font-size: 11px;
+  color: var(--accent-mid);
+  margin-top: 2px;
+}
+
+.score-title {
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.score-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.score-msg {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 460px;
+  margin: 0 auto 1.75rem;
+}
+
+.cta-box {
+  background: var(--accent-light);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.cta-box-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.cta-box p {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.action-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.restart-btn {
+  padding: 10px 22px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+  transition: border-color 0.15s;
+}
+
+.restart-btn:hover { border-color: var(--text-secondary); }
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+  .container { padding: 1.25rem 1rem 3rem; }
+  .site-header { padding: 2rem 1rem 1.5rem; }
+  .narrative p { font-size: 14.5px; }
+  .question-text { font-size: 14.5px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="project-tag">Μεγαλώνοντας Μαζί</div>
+  <h1 class="site-title">Τι γνωρίζεις για τη γήρανση<br>στη νοητική αναπηρία;</h1>
+  <p class="site-subtitle">10 σενάρια από την καθημερινή πραγματικότητα.<br>Πόσο έτοιμοι είμαστε να ανταποκριθούμε;</p>
+</header>
+
+<div class="container">
+
+  <div class="progress-section">
+    <div class="progress-meta">
+      <span class="progress-label" id="prog-label">Σενάριο 1 από 10</span>
+      <span class="progress-count" id="prog-score">0 σωστές</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="prog-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <div class="scenario-card" id="sc-card">
+    <div class="person-header">
+      <div class="avatar" id="sc-av"></div>
+      <div class="person-info">
+        <div class="person-name" id="sc-name"></div>
+        <div class="person-role" id="sc-role"></div>
+      </div>
+      <div class="theme-badge" id="sc-theme"></div>
+    </div>
+    <div class="narrative">
+      <p id="sc-text"></p>
+    </div>
+  </div>
+
+  <div class="question-section" id="q-section">
+    <div class="question-label">Ερώτηση</div>
+    <p class="question-text" id="q-text"></p>
+    <div class="options" id="q-opts"></div>
+    <div class="feedback" id="q-fb"></div>
+    <div class="nav-row">
+      <button class="next-btn" id="q-nxt"></button>
+    </div>
+  </div>
+
+  <div class="score-screen" id="score-screen">
+    <div class="score-ring">
+      <span class="score-number" id="sc-n"></span>
+      <span class="score-denom">/ 10</span>
+    </div>
+    <h2 class="score-title" id="sc-ttl"></h2>
+    <p class="score-sub" id="sc-sub"></p>
+    <p class="score-msg" id="sc-msg"></p>
+    <div class="cta-box">
+      <div class="cta-box-title">Σχετικά με το πρόγραμμα</div>
+      <p>Το «Μεγαλώνοντας Μαζί» υποστηρίζει άτομα με νοητική αναπηρία στη διαδικασία της γήρανσης και τους φροντιστές τους. Υλοποιείται από το ΚΕΕΠΕΑ «Ορίζοντες» και την ΕΕΑ «Μαργαρίτα» στο πλαίσιο του Προγράμματος Θεματικών Δωρεών για την Υγιή Γήρανση.</p>
+    </div>
+    <div class="action-row">
+      <button class="restart-btn" onclick="init()">Ξεκίνα από την αρχή</button>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  Πρόγραμμα «Μεγαλώνοντας Μαζί» &nbsp;|&nbsp; ΚΕΕΠΕΑ «Ορίζοντες»<br>
+  Το έργο υλοποιείται στο πλαίσιο του Προγράμματος Θεματικών Δωρεών για την Υγιή Γήρανση<br>
+  με την υποστήριξη του Ιδρύματος Μποδοσάκη, του Κοινωφελούς Ιδρύματος Ιωάννη Σ. Λάτση<br>
+  και του ΤΙΜΑ Κοινωφελούς Ιδρύματος.
+</footer>
+
+<script>
+const data = [
+  {
+    name: "Γιώργος, 48 ετών",
+    role: "Άτομο με νοητική αναπηρία",
+    theme: "Αόρατη γήρανση",
+    text: "Ο Γιώργος ζει με τη μητέρα του και τα τελευταία χρόνια κουράζεται πιο εύκολα, ξεχνά μικρές καθημερινές συνήθειες και δυσκολεύεται να ακολουθήσει τον ίδιο ρυθμό στο πρόγραμμα της ημέρας. Όταν λέει ότι δεν αντέχει όπως παλιά, ακούει συχνά «μην κάνεις έτσι, νέος είσαι ακόμα». Κανείς δεν του έχει εξηγήσει τι σημαίνει ότι μεγαλώνει, ούτε αν αυτές οι αλλαγές πρέπει να αξιολογηθούν. Ο ίδιος αισθάνεται ότι κάτι αλλάζει, αλλά δεν έχει λόγια ούτε στήριξη για να το πει.",
+    q: "Ο Γιώργος κουράζεται πιο εύκολα και ξεχνά καθημερινές συνήθειες. Τι απαιτεί αυτή η κατάσταση;",
+    opts: [
+      "Ενθάρρυνση να διατηρήσει τον ίδιο ρυθμό, γιατί η αδράνεια επιδεινώνει τα συμπτώματα",
+      "Έγκαιρη αξιολόγηση των αλλαγών από εξειδικευμένο επαγγελματία",
+      "Αύξηση της οικογενειακής επιτήρησης ώστε να μη μένει μόνος",
+      "Αναμονή — τέτοιες αλλαγές είναι φυσιολογικές για την ηλικία του"
+    ],
+    a: 1,
+    fb: "Τα άτομα με νοητική αναπηρία γερνούν συχνά νωρίτερα — σε αρκετές περιπτώσεις από τα 45 — και εμφανίζουν αλλαγές που χρειάζονται έγκαιρη αξιολόγηση. Η απόρριψη των σημείων με φράσεις όπως «νέος είσαι ακόμα» καθυστερεί την υποστήριξη και αφήνει το άτομο χωρίς τα εργαλεία να ερμηνεύσει αυτό που βιώνει."
+  },
+  {
+    name: "Κώστας, 51 ετών",
+    role: "Άτομο με νοητική αναπηρία",
+    theme: "Διπλό φορτίο φροντίδας",
+    text: "Ο Κώστας ζει σε μικρή επαρχιακή πόλη με τη μητέρα του, 78 ετών, και τον πατέρα του που είναι κατάκοιτος. Η μητέρα φροντίζει και τους δύο. Στην περιοχή δεν υπάρχει κοντινή δομή, ούτε σταθερή υπηρεσία υποστήριξης. Ο Κώστας δεν έχει μάθει να χρησιμοποιεί συγκοινωνία, να πηγαίνει μόνος του σε υπηρεσίες ή να αντιμετωπίζει απλές καθημερινές δυσκολίες. Νιώθει ότι εξαρτάται απόλυτα από μια μητέρα που πια δεν αντέχει.",
+    q: "Μια μητέρα 78 ετών φροντίζει ταυτόχρονα κατάκοιτο σύζυγο και ενήλικο γιο με νοητική αναπηρία, σε περιοχή χωρίς υπηρεσίες. Ποια είναι η πιο επείγουσα ανάγκη;",
+    opts: [
+      "Μεταφορά του Κώστα σε δομή κλειστής φροντίδας",
+      "Ενίσχυση μόνο της οικονομικής επιδοματικής στήριξης",
+      "Σύνδεση με κοινωνική υπηρεσία για αξιολόγηση αναγκών και οικοδόμηση δικτύου υποστήριξης",
+      "Εκπαίδευση του Κώστα σε δεξιότητες αυτονομίας ώστε να μειωθεί το φορτίο"
+    ],
+    a: 2,
+    fb: "Η άμεση παρέμβαση κοινωνικής υπηρεσίας είναι κρίσιμη — όχι για να «λυθεί» το πρόβλημα μέσω μεταφοράς, αλλά για να χαρτογραφηθούν οι ανάγκες και να ενεργοποιηθεί ένα δίχτυ υποστήριξης. Η απουσία δομών σε μια περιοχή δεν σημαίνει απουσία λύσεων — σημαίνει ότι χρειάζεται συντονισμός."
+  },
+  {
+    name: "Ζωή, 52 ετών",
+    role: "Άτομο με νοητική αναπηρία",
+    theme: "Γήρανση εντός δομής",
+    text: "Η Ζωή συμμετέχει εδώ και χρόνια σε πρόγραμμα δημιουργικής απασχόλησης. Παλιά μπορούσε να παρακολουθεί όλη τη μέρα χωρίς δυσκολία. Τώρα κουράζεται, έχει πόνους και χρειάζεται πιο αργό ρυθμό. Αντί όμως να αλλάξει το πρόγραμμα με βάση τις νέες ανάγκες της, όλοι περιμένουν να συνεχίσει όπως πριν. Η ίδια νιώθει ότι αποτυγχάνει, ενώ στην πραγματικότητα έχει απλώς αλλάξει η φάση ζωής της.",
+    q: "Η Ζωή δεν μπορεί πλέον να ακολουθεί το ίδιο πρόγραμμα στη δομή. Νιώθει ότι αποτυγχάνει. Τι χρειάζεται;",
+    opts: [
+      "Μείωση μόνο των ωρών παρουσίας ώστε να ξεκουράζεται",
+      "Παραπομπή αποκλειστικά σε ιατρικό έλεγχο",
+      "Αναθεώρηση του ατομικού προγράμματος με βάση τη νέα φάση ζωής της",
+      "Ενθάρρυνση να επιμείνει, γιατί η διακοπή της ρουτίνας είναι επιβλαβής"
+    ],
+    a: 2,
+    fb: "Η γήρανση δεν είναι αποτυχία. Όταν μια δομή δεν προσαρμόζει τους στόχους υποστήριξης στη νέα φάση ζωής, μεταφέρει σιωπηλά το μήνυμα ότι «κάτι δεν πάει καλά». Ένα ενημερωμένο ατομικό πρόγραμμα που αναγνωρίζει την αλλαγή — και δεν ζητά από το άτομο να πετύχει στόχους παλαιότερης φάσης — είναι η κατάλληλη αντίδραση."
+  },
+  {
+    name: "Βασίλης, 49 ετών",
+    role: "Άτομο με νοητική αναπηρία",
+    theme: "Κρίση χωρίς δίχτυ",
+    text: "Ο Βασίλης ζούσε πάντα με τους γονείς του. Δεν έμαθε ποτέ να μαγειρεύει, να ζητά βοήθεια, να χρησιμοποιεί χρήματα ή να οργανώνει μια μέρα μόνος του. Όταν η μητέρα του μπαίνει ξαφνικά στο νοσοκομείο, ο Βασίλης μένει μόνος για πρώτη φορά χωρίς να ξέρει τι πρέπει να κάνει. Δεν είναι ενταγμένος σε καμία υπηρεσία και δεν υπάρχει σχέδιο έκτακτης ανάγκης.",
+    q: "Η μητέρα του Βασίλη νοσηλεύεται εσπευσμένα. Αυτός μένει μόνος για πρώτη φορά, χωρίς υποστήριξη. Τι θα είχε αποτρέψει αυτή την κρίση;",
+    opts: [
+      "Η ύπαρξη ενός συγγενή που να αναλαμβάνει σε τέτοιες περιπτώσεις",
+      "Μεγαλύτερη οικονομική στήριξη ώστε να μπορεί να ζει πιο αυτόνομα",
+      "Ένα σχέδιο έκτακτης ανάγκης και ένταξη σε υπηρεσία πριν από την κρίση",
+      "Εκπαίδευση στο να ζητά βοήθεια όταν τη χρειάζεται"
+    ],
+    a: 2,
+    fb: "Ο Βασίλης αντιπροσωπεύει έναν «αόρατο» πληθυσμό — άτομα εκτός δομών που δεν φαίνονται στο σύστημα. Ένα σχέδιο έκτακτης ανάγκης — ποιος καλείται, τι γίνεται, πού πηγαίνει το άτομο — είναι βασικό εργαλείο Life Planning. Δεν απαιτεί εισαγωγή σε δομή, μόνο προληπτικό σχεδιασμό."
+  },
+  {
+    name: "Νίκος, 46 ετών",
+    role: "Άτομο με νοητική αναπηρία",
+    theme: "Δικαίωμα συμμετοχής",
+    text: "Ο Νίκος πηγαίνει καθημερινά σε ΚΔΗΦ, έχει παρέες και σταθερή ρουτίνα. Ακούει όμως όλο και πιο συχνά τους γονείς του να μιλούν χαμηλόφωνα για το μέλλον του. Κανείς δεν του λέει καθαρά τι συζητούν, ούτε του ζητά τη γνώμη του. Ο ίδιος καταλαβαίνει ότι κάτι αλλάζει και φοβάται μήπως μια μέρα βρεθεί αλλού χωρίς να το έχει καταλάβει.",
+    q: "Οι γονείς του Νίκου σχεδιάζουν το μέλλον του χωρίς να τον ενημερώνουν και χωρίς να ζητούν τη γνώμη του. Τι παραβιάζεται;",
+    opts: [
+      "Η εμπιστευτικότητα της οικογένειας σε αποφάσεις φροντίδας",
+      "Το δικαίωμα του Νίκου στην πληροφόρηση και στη συμμετοχή στον σχεδιασμό",
+      "Ο κανόνας ότι οι γονείς δεν πρέπει να ασχολούνται με το μέλλον",
+      "Δεν παραβιάζεται κάτι — οι γονείς γνωρίζουν καλύτερα τι είναι σωστό"
+    ],
+    a: 1,
+    fb: "Το Άρθρο 12 της Σύμβασης του ΟΗΕ για τα Δικαιώματα των ΑμεΑ κατοχυρώνει το δικαίωμα κάθε ατόμου να συμμετέχει στις αποφάσεις που το αφορούν, ανεξαρτήτως επιπέδου αναπηρίας. Να μαθαίνει κανείς τι πρόκειται να συμβεί στη ζωή του δεν είναι προνόμιο. Είναι δικαίωμα."
+  },
+  {
+    name: "Άννα, 47 ετών",
+    role: "Άτομο με νοητική αναπηρία",
+    theme: "Ψευδαίσθηση σχεδίου",
+    text: "Η Άννα έχει ελαφρά νοητική αναπηρία και ζει με τη μητέρα της. Η μητέρα λέει ότι «το έχει κανονίσει»: υπάρχει ένα διαμέρισμα και λίγα χρήματα στην άκρη. Η Άννα όμως δεν ξέρει πού θα ζήσει, με ποιον, τι υποστήριξη θα έχει και αν θα μπορεί να συνεχίσει τη ζωή της όπως την ξέρει. Όλοι μιλούν για το μέλλον της χωρίς την ίδια.",
+    q: "Η μητέρα λέει «το έχω κανονίσει» — υπάρχει διαμέρισμα και αποταμιεύσεις. Τι λείπει κυρίως από αυτό το «πλάνο»;",
+    opts: [
+      "Νομικό έγγραφο που να κατοχυρώνει τις αποφάσεις",
+      "Περισσότερα χρήματα για να καλυφθούν οι πραγματικές ανάγκες",
+      "Η συμμετοχή της Άννας στον σχεδιασμό του δικού της μέλλοντος",
+      "Η γνώμη κοινωνικού λειτουργού που να επαληθεύσει το πλάνο"
+    ],
+    a: 2,
+    fb: "Ένα σχέδιο που δεν περιλαμβάνει την ίδια την Άννα δεν είναι πραγματικό σχέδιο — είναι μια διευθέτηση που αφορά αντικείμενα, όχι πρόσωπο. Ο προσωποκεντρικός σχεδιασμός (person-centred planning) ξεκινά από τις επιθυμίες, τις αξίες και τους στόχους του ίδιου του ατόμου."
+  },
+  {
+    name: "Μαρία, 74 ετών",
+    role: "Μητέρα-φροντίστρια",
+    theme: "Απουσία διαδοχής",
+    text: "Η Μαρία φροντίζει μόνη της τον γιο της, 48 ετών, μετά τον θάνατο του συζύγου της. Δεν έχει εμπιστευτεί ποτέ κάποια δομή ή υπηρεσία, γιατί πίστευε ότι μόνο η ίδια ξέρει πραγματικά το παιδί της. Τώρα έχει δικά της προβλήματα υγείας και αρχίζει να φοβάται τι θα συμβεί αν λείψει ξαφνικά. Δεν υπάρχει κανένα γραπτό πλάνο, κανείς δεύτερος που να γνωρίζει τις καθημερινές ανάγκες του γιου της.",
+    q: "Η Μαρία φροντίζει μόνη της και έχει προβλήματα υγείας. Ποιος είναι ο μεγαλύτερος κίνδυνος αυτής της κατάστασης;",
+    opts: [
+      "Ότι λόγω ηλικίας δεν μπορεί να προσφέρει επαρκή ποιότητα φροντίδας",
+      "Ότι δεν υπάρχει κανένα σχέδιο για το τι θα συμβεί αν αυτή δεν μπορεί πλέον να φροντίσει",
+      "Ότι δεν λαμβάνει τα επιδόματα που δικαιούται",
+      "Ότι ο γιος της δεν έχει πρόσβαση σε επαγγελματική υποστήριξη κατά τη διάρκεια της ημέρας"
+    ],
+    a: 1,
+    fb: "Η απουσία σχεδίου διαδοχής είναι η σιωπηλή επείγουσα κατάσταση στην οικογενειακή φροντίδα. Όταν ο μοναδικός φροντιστής λείψει ξαφνικά, το άτομο με αναπηρία αντιμετωπίζει κρίση χωρίς καμία προετοιμασία. Αυτό δεν είναι αποτυχία αγάπης — είναι απουσία σχεδιασμού."
+  },
+  {
+    name: "Σοφία, 58 ετών",
+    role: "Αδερφή-φροντίστρια",
+    theme: "Ενοχές εγκατάλειψης",
+    text: "Μετά τον θάνατο των γονιών της, η Σοφία ανέλαβε τη φροντίδα του αδερφού της, 53 ετών, χωρίς να έχει προετοιμαστεί ποτέ γι' αυτό. Δουλεύει, έχει δική της οικογένεια και αισθάνεται εξαντλημένη. Όταν σκέφτεται μια πιο οργανωμένη μορφή υποστήριξης, νιώθει ενοχές, σαν να τον εγκαταλείπει.",
+    q: "Η Σοφία νιώθει ενοχές κάθε φορά που σκέφτεται εναλλακτικές λύσεις υποστήριξης. Τι μπορεί να αλλάξει αυτή τη δυναμική;",
+    opts: [
+      "Ψυχολογική υποστήριξη για να διαχειριστεί αποκλειστικά τις ενοχές της",
+      "Ενημέρωση για τις διαθέσιμες δομές και ενεργή υποστήριξη στη λήψη αποφάσεων",
+      "Οικονομική αποζημίωση για το έργο της ως φροντίστρια",
+      "Αποδοχή της κατάστασης — η ευθύνη φροντίδας ανήκει στην οικογένεια"
+    ],
+    a: 1,
+    fb: "Οι ενοχές εγκατάλειψης είναι πολύ συχνές σε φροντιστές και ενισχύονται από άγνοια των εναλλακτικών. Η ενημέρωση ότι μια καλά οργανωμένη δομή υποστήριξης δεν αντικαθιστά τη σχέση αλλά τη συμπληρώνει μπορεί να αλλάξει ριζικά τον τρόπο που σκέφτεται μια οικογένεια."
+  },
+  {
+    name: "Δήμητρα, 69 ετών",
+    role: "Μητέρα-φροντίστρια",
+    theme: "Αναβολή σχεδιασμού",
+    text: "Η Δήμητρα λέει συχνά για τον γιο της: «Όσο αντέχω, θα τον προσέχω. Είναι η παρέα μου». Η φροντίδα έχει γίνει ο κεντρικός άξονας της ζωής της. Παρά τα σοβαρά προβλήματα υγείας που έχουν εμφανιστεί, αποφεύγει να μιλήσει για εναλλακτικές. Φοβάται τη δική της αλλαγή όσο και τη δική του.",
+    q: "«Όσο αντέχω, θα τον προσέχω». Η Δήμητρα έχει σοβαρά προβλήματα υγείας αλλά αποφεύγει κάθε συζήτηση για το μέλλον. Τι περιγράφει αυτή η στάση;",
+    opts: [
+      "Ισχυρό δεσμό αγάπης που πρέπει να σεβαστούμε χωρίς παρέμβαση",
+      "Αναβολή σχεδιασμού που εκθέτει και τους δύο σε κίνδυνο",
+      "Φυσιολογική αντίδραση — ο γονέας γνωρίζει καλύτερα από οποιονδήποτε τι χρειάζεται",
+      "Απόδειξη ότι η κατάσταση λειτουργεί και δεν χρειάζεται παρέμβαση"
+    ],
+    a: 1,
+    fb: "Η αγάπη και ο σχεδιασμός δεν αντιτίθενται. Όταν η φροντίδα γίνεται ο μοναδικός άξονας ζωής ενός φροντιστή, η αναβολή κάθε συζήτησης για το μέλλον γίνεται αμυντικός μηχανισμός — που αφήνει τελικά και τους δύο χωρίς προστασία."
+  },
+  {
+    name: "Αντώνης, 45 ετών",
+    role: "Μονογονέας φροντιστής",
+    theme: "Αόρατη εξάντληση",
+    text: "Ο Αντώνης μεγαλώνει μόνος τον γιο του, 22 ετών, με νοητική αναπηρία, μετά τον θάνατο της συζύγου του. Προσπαθεί να συνδυάσει εργασία, φροντίδα, υπηρεσίες και οικονομικές υποχρεώσεις χωρίς υποστήριξη. Δεν ζητά βοήθεια, επειδή θεωρεί ότι πρέπει να τα καταφέρει μόνος του και ότι οι υπηρεσίες απευθύνονται σε «βαρύτερες περιπτώσεις».",
+    q: "Ο Αντώνης δεν ζητά βοήθεια γιατί πιστεύει ότι «πρέπει να τα βγάλει μόνος» και ότι δεν έχει «αρκετά βαριά» κατάσταση. Τι αντικατοπτρίζει αυτή η στάση;",
+    opts: [
+      "Υψηλό αίσθημα ευθύνης που πρέπει να ενθαρρύνουμε",
+      "Έλλειψη πληροφόρησης για το τι δικαιούται και ανάγκη ενεργητικής καθοδήγησης",
+      "Προσωπική επιλογή που πρέπει να σεβαστούμε χωρίς παρέμβαση",
+      "Ένδειξη ότι η κατάσταση δεν είναι κρίσιμη"
+    ],
+    a: 1,
+    fb: "Η λογική «αντέχω» και «υπάρχουν χειρότερες περιπτώσεις» οδηγεί σε αθόρυβη εξάντληση. Ο ρόλος των υπηρεσιών δεν είναι μόνο να παρεμβαίνουν σε κρίση — είναι να υποστηρίζουν πριν από αυτήν, με ενεργητική πρόσβαση και ενημέρωση."
+  }
+];
+
+const letters = ['α', 'β', 'γ', 'δ'];
+let cur = 0, score = 0, answered = false;
+
+function init() {
+  cur = 0; score = 0; answered = false;
+  document.getElementById('score-screen').style.display = 'none';
+  document.getElementById('sc-card').style.display = 'block';
+  document.getElementById('q-section').style.display = 'block';
+  render();
+}
+
+function render() {
+  const s = data[cur];
+  document.getElementById('prog-label').textContent = 'Σενάριο ' + (cur+1) + ' από 10';
+  document.getElementById('prog-score').textContent = score + ' σωστές';
+  document.getElementById('prog-fill').style.width = (cur / 10 * 100) + '%';
+  document.getElementById('sc-av').textContent = s.name.charAt(0);
+  document.getElementById('sc-name').textContent = s.name;
+  document.getElementById('sc-role').textContent = s.role;
+  document.getElementById('sc-theme').textContent = s.theme;
+  document.getElementById('sc-text').textContent = s.text;
+  document.getElementById('q-text').textContent = s.q;
+  const fb = document.getElementById('q-fb');
+  fb.style.display = 'none';
+  const nxt = document.getElementById('q-nxt');
+  nxt.style.display = 'none';
+  nxt.textContent = cur < 9 ? 'Επόμενο σενάριο →' : 'Δες τα αποτελέσματα →';
+  const container = document.getElementById('q-opts');
+  container.innerHTML = '';
+  s.opts.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'opt';
+    btn.innerHTML = '<span class="opt-letter">' + letters[i] + '</span><span class="opt-text">' + opt + '</span>';
+    btn.onclick = () => pick(i);
+    container.appendChild(btn);
+  });
+  answered = false;
+}
+
+function pick(i) {
+  if (answered) return;
+  answered = true;
+  const s = data[cur];
+  const btns = document.querySelectorAll('.opt');
+  btns.forEach((b, j) => {
+    b.disabled = true;
+    if (j === s.a) b.classList.add('correct');
+    else if (j === i && i !== s.a) b.classList.add('wrong');
+  });
+  if (i === s.a) score++;
+  const fb = document.getElementById('q-fb');
+  fb.textContent = s.fb;
+  fb.style.display = 'block';
+  document.getElementById('prog-score').textContent = score + ' σωστές';
+  const nxt = document.getElementById('q-nxt');
+  nxt.style.display = 'inline-block';
+  nxt.onclick = () => { cur++; cur < 10 ? render() : showScore(); };
+}
+
+function showScore() {
+  document.getElementById('sc-card').style.display = 'none';
+  document.getElementById('q-section').style.display = 'none';
+  document.getElementById('prog-fill').style.width = '100%';
+  document.getElementById('prog-label').textContent = 'Ολοκληρώθηκε';
+  document.getElementById('prog-score').textContent = score + '/10 σωστές';
+  document.getElementById('score-screen').style.display = 'block';
+  document.getElementById('sc-n').textContent = score;
+  const levels = [
+    [0, 3, "Πολλά παραμένουν αθέατα", "Η γήρανση στη νοητική αναπηρία είναι ένα θέμα που σπάνια συζητείται ανοιχτά. Τα σενάρια που διάβασες δεν είναι εξαιρέσεις — είναι η καθημερινότητα πολλών οικογενειών και δομών στη χώρα."],
+    [4, 6, "Γνωρίζεις τα βασικά", "Έχεις μια αρχική εικόνα. Υπάρχουν όμως κρίσιμα κενά — ιδίως γύρω από τη διαφορά ανάμεσα στο τι προβλέπει ο νόμος και στο τι βιώνουν οι άνθρωποι στην καθημερινότητά τους."],
+    [7, 8, "Καλή γνώση του πλαισίου", "Αντιλαμβάνεσαι τα βασικά κενά — μεταξύ οικογενειακής φροντίδας, θεσμικής απουσίας και δικαιωμάτων. Αυτό είναι καλό σημείο εκκίνησης για συζήτηση και δράση."],
+    [9, 10, "Εξαιρετική γνώση", "Κατανοείς με ακρίβεια τι σημαίνει ενεργός γήρανση στη νοητική αναπηρία και ποια συστηματικά κενά χρειάζονται αντιμετώπιση. Αυτή η γνώση έχει αξία — μοιράσου την."]
+  ];
+  const lv = levels.find(([a, b]) => score >= a && score <= b);
+  document.getElementById('sc-ttl').textContent = lv[2];
+  document.getElementById('sc-sub').textContent = score + ' σωστές απαντήσεις από 10';
+  document.getElementById('sc-msg').textContent = lv[3];
+}
+
+init();
+</script>
+</body>
+</html>
