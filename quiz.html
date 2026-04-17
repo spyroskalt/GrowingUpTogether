@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .quiz-container {
+            margin: auto;
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 5px 0;
+        }
+        button {
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Fun Quiz</h1>
+    <div class="question">
+        <p>1. What is the capital of France?</p>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="a"> a) Berlin</li>
+            <li><input type="radio" name="q1" value="b"> b) Paris</li>
+            <li><input type="radio" name="q1" value="c"> c) Madrid</li>
+            <li><input type="radio" name="q1" value="d"> d) Rome</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>2. Which planet is known as the Red Planet?</p>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="a"> a) Earth</li>
+            <li><input type="radio" name="q2" value="b"> b) Mars</li>
+            <li><input type="radio" name="q2" value="c"> c) Jupiter</li>
+            <li><input type="radio" name="q2" value="d"> d) Saturn</li>
+        </ul>
+    </div>
+    <button onclick="calculateScore()">Submit</button>
+    <p id="result"></p>
+</div>
+
+<script>
+    function calculateScore() {
+        let score = 0;
+        if (document.querySelector('input[name="q1"]:checked')?.value === 'b') score++;
+        if (document.querySelector('input[name="q2"]:checked')?.value === 'b') score++;
+        document.getElementById('result').innerText = `Your score is: ${score}/2`;
+    }
+</script>
+
+</body>
+</html>
